@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box] ;
+rankdir=LR ;
+0 [label="Medu <= 3.5\ngini = 0.484\nsamples = 395\nvalue = [233, 162]"] ;
+1 [label="famsize <= 0.5\ngini = 0.454\nsamples = 264\nvalue = [172, 92]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=-45, headlabel="True"] ;
+2 [label="Medu <= 1.5\ngini = 0.432\nsamples = 187\nvalue = [128, 59]"] ;
+1 -> 2 ;
+3 [label="gini = 0.295\nsamples = 39\nvalue = [32, 7]"] ;
+2 -> 3 ;
+4 [label="gini = 0.456\nsamples = 148\nvalue = [96, 52]"] ;
+2 -> 4 ;
+5 [label="Fjob <= 2.5\ngini = 0.49\nsamples = 77\nvalue = [44, 33]"] ;
+1 -> 5 ;
+6 [label="gini = 0.497\nsamples = 54\nvalue = [29, 25]"] ;
+5 -> 6 ;
+7 [label="gini = 0.454\nsamples = 23\nvalue = [15, 8]"] ;
+5 -> 7 ;
+8 [label="Mjob <= 1.5\ngini = 0.498\nsamples = 131\nvalue = [61, 70]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=45, headlabel="False"] ;
+9 [label="gini = 0.408\nsamples = 28\nvalue = [8, 20]"] ;
+8 -> 9 ;
+10 [label="Fjob <= 3.5\ngini = 0.5\nsamples = 103\nvalue = [53, 50]"] ;
+8 -> 10 ;
+11 [label="gini = 0.492\nsamples = 80\nvalue = [45, 35]"] ;
+10 -> 11 ;
+12 [label="gini = 0.454\nsamples = 23\nvalue = [8, 15]"] ;
+10 -> 12 ;
+}
